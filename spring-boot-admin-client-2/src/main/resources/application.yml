@@ -1,0 +1,18 @@
+server:
+  port: 9080
+
+spring:
+  profiles:
+    active: development
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+        username: admin
+        password: admin-password
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
